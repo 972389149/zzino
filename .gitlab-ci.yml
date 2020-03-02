@@ -1,0 +1,16 @@
+#test
+stages:
+  - install_deps
+
+# 安装依赖
+install_deps:
+  stage: install_deps
+  only:
+    - release--shiyanzx
+    - master
+  script:
+    - npm install
+    - npm run build
+    - rm -rf /www/wwwroot/www.zzcp.fun/static
+    - rm -rf /www/wwwroot/www.zzcp.fun/index.html
+    - cp -r dist/* /www/wwwroot/www.zzcp.fun/
