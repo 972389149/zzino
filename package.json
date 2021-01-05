@@ -4,7 +4,7 @@
   "description": "之前使用的是vue-cli，现在从零用webpack重构",
   "dependencies": {},
   "devDependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.3",
     "babel-loader": "^7.1.2",
